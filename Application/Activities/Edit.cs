@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Persistence;
 
 namespace Application.Activities
@@ -42,6 +43,8 @@ namespace Application.Activities
                 activity.Date = request.Date ?? activity.Date;
                 activity.City = request.City ?? activity.City;
                 activity.Venue = request.Venue ?? activity.Venue;
+
+                _context.Entry(activity).State = EntityState.Modified;
 
                 var success = await _context.SaveChangesAsync() > 0;
 
