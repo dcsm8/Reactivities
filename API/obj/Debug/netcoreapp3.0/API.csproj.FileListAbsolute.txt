@@ -49,3 +49,7 @@
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/MediatR.dll
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/FluentValidation.dll
+/Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/FluentValidation.AspNetCore.dll
+/Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/compile/Workspace/Reactivities/API/obj/Debug/netcoreapp3.0/API.MvcApplicationPartsAssemblyInfo.cs
