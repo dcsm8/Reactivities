@@ -26,12 +26,12 @@ namespace Application.Activities
         {
             public CommandValidator()
             {
-                RuleFor(x => x.Title).NotNull();
-                RuleFor(x => x.Description).NotNull();
-                RuleFor(x => x.Category).NotNull();
-                RuleFor(x => x.Date).NotNull();
-                RuleFor(x => x.City).NotNull();
-                RuleFor(x => x.Venue).NotNull();
+                RuleFor(x => x.Title).NotEmpty();
+                RuleFor(x => x.Description).NotEmpty();
+                RuleFor(x => x.Category).NotEmpty();
+                RuleFor(x => x.Date).NotEmpty();
+                RuleFor(x => x.City).NotEmpty();
+                RuleFor(x => x.Venue).NotEmpty();
             }
         }
 
