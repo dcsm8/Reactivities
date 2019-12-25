@@ -1,12 +1,12 @@
 import React, { useContext, useEffect } from "react";
 import { Grid } from "semantic-ui-react";
-import ActivityStore from "../../../app/stores/ActivityStore";
 import { observer } from "mobx-react-lite";
 import { RouteComponentProps } from "react-router-dom";
 import ActivityDetailedHeader from "./ActivityDetailedHeader";
 import ActivityDetailedChat from "./ActivityDetailedChat";
 import ActivityDetailedInfo from "./ActivityDetailedInfo";
 import ActivityDetailedSidebar from "./ActivityDetailedSidebar";
+import { RootStoreContext } from "../../../app/stores/rootStore";
 
 interface DetailsParams {
   id: string;
@@ -15,8 +15,8 @@ interface DetailsParams {
 const ActivityDetails: React.FC<RouteComponentProps<DetailsParams>> = ({
   match,
 }) => {
-  const activityStore = useContext(ActivityStore);
-  const { activity, loadingInitial, loadActivity } = activityStore;
+  const rootStore = useContext(RootStoreContext);
+  const { activity, loadingInitial, loadActivity } = rootStore.activityStore;
 
   useEffect(() => {
     loadActivity(match.params.id);
