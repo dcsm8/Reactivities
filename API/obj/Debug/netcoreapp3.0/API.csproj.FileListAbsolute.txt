@@ -68,3 +68,7 @@
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/Microsoft.IdentityModel.Protocols.dll
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/AutoMapper.dll
+/Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/Castle.Core.dll
+/Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Proxies.dll
