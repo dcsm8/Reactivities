@@ -72,3 +72,4 @@
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/Castle.Core.dll
 /Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Proxies.dll
+/Users/compile/Workspace/Reactivities/API/bin/Debug/netcoreapp3.0/CloudinaryDotNet.dll
