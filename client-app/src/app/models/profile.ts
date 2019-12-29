@@ -11,3 +11,5 @@ export interface IPhoto {
   url: string;
   isMain: boolean;
 }
+
+export interface IProfileFormValues extends Partial<IProfile> {}

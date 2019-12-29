@@ -1,10 +1,9 @@
 using System.Linq;
-using AutoMapper;
 using Domain;
 
 namespace Application.Activities
 {
-    public class MappingProfile : Profile
+    public class MappingProfile : AutoMapper.Profile
     {
         public MappingProfile()
         {

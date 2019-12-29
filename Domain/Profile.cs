@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Domain;
 
-namespace Application.Profiles
+namespace Domain
 {
     public class Profile
     {
