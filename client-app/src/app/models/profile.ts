@@ -16,3 +16,10 @@ export interface IPhoto {
 }
 
 export interface IProfileFormValues extends Partial<IProfile> {}
+
+export interface IUserActivity {
+  id: string;
+  title: string;
+  category: string;
+  date: Date;
+}

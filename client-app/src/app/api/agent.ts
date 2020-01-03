@@ -1,9 +1,14 @@
 import axios, { AxiosResponse, AxiosRequestConfig } from "axios";
-import { IActivity } from "../models/activity";
+import { IActivity, IActivitiesEnvelope } from "../models/activity";
 import { history } from "../../index";
 import { toast } from "react-toastify";
 import { IUser, IUserFormValues } from "../models/user";
-import { IProfile, IPhoto, IProfileFormValues } from "../models/profile";
+import {
+  IProfile,
+  IPhoto,
+  IProfileFormValues,
+  IUserActivity,
+} from "../models/profile";
 
 axios.defaults.baseURL = "http://localhost:5000/api";
 
@@ -84,7 +89,11 @@ const requests = {
 };
 
 const Activities = {
-  list: (): Promise<IActivity[]> => requests.get("/activities"),
+  list: (params: URLSearchParams): Promise<IActivitiesEnvelope> =>
+    axios
+      .get("/activities", { params: params })
+      .then(sleep(1000))
+      .then(responseBody),
   details: (id: string) => requests.get(`/activities/${id}`),
   create: (activity: IActivity) => requests.post("/activities", activity),
   update: (activity: IActivity) =>
@@ -115,6 +124,11 @@ const Profiles = {
   unfollow: (username: string) => requests.del(`/profiles/${username}/follow`),
   listFollowings: (username: string, predicate: string) =>
     requests.get(`/profiles/${username}/follow?predicate=${predicate}`),
+  listActivities: (
+    username: string,
+    predicate: string,
+  ): Promise<IUserActivity[]> =>
+    requests.get(`/profiles/${username}/activities?predicate=${predicate}`),
 };
 
 export default {
